@@ -7,19 +7,12 @@ public class B2675 {
     public static StringBuilder sb = new StringBuilder();
     public static void main(String[] args) throws Exception {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-        int T = Integer.parseInt(in.readLine());
 
-        for (int i = 0; i < T; i++) {
-            String[] split = in.readLine().split(" ");
-            int n = Integer.parseInt(split[0]);
-            String s = split[1];
-
-            for (int j = 0; j < s.length(); j++) {
-                for (int m=0; m<n; m++) {
-                    System.out.print(s.charAt(j));
-                }
-            }
-            System.out.println();
+        String[] split = in.readLine().split(" ");
+        if (split[0].equals("")) {
+            System.out.println(split.length - 1);
+        } else {
+            System.out.println(split.length);
         }
     }
 }
