@@ -8,7 +8,14 @@ public class B2908 {
     public static void main(String[] args) throws Exception {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 
-        String split = in.readLine().trim(); // 공백 제거
+        String[] split = in.readLine().split(" ");
+
+        char temp = split[0].charAt(i);
+
+        int a = Integer.parseInt(split[0]);
+        int b = Integer.parseInt(split[1]);
+
+        int newA = (a % 100) + (a - a % 100 * 100) % 10
         if (split.isEmpty()) {
             System.out.println(0);
         } else {
