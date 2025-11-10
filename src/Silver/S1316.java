@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 public class S1316 {
     public static void main(String[] args) throws Exception {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-        String s = in.readLine();
+        int n = Integer.parseInt(in.readLine());
         
     }
 }
