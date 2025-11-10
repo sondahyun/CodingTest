@@ -10,17 +10,18 @@ public class B2908 {
 
         String[] split = in.readLine().split(" ");
 
-        char temp = split[0].charAt(i);
+        String num1 = split[0];
+        String num2 = split[1];
 
-        int a = Integer.parseInt(split[0]);
-        int b = Integer.parseInt(split[1]);
+        String new_num1 = num1.charAt(2) + num1.substring(1,2) + num1.substring(0,1);
+        String new_num2 = num2.charAt(2) + num2.substring(1,2) + num2.substring(0,1);
 
-        int newA = (a % 100) + (a - a % 100 * 100) % 10
-        if (split.isEmpty()) {
-            System.out.println(0);
+        if (Integer.parseInt(new_num1) > Integer.parseInt(new_num2)) {
+            System.out.println(new_num1);
         } else {
-            String[] line = split.split(" ");
-            System.out.println(line.length);
+            System.out.println(new_num2);
         }
+
+
     }
 }
