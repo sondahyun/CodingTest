@@ -6,6 +6,20 @@ import java.io.InputStreamReader;
 public class S2941 {
     public static void main(String[] args) throws Exception {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+//        String s = in.readLine();
+//
+//        // 겹치는 패턴("dz=")을 먼저 처리
+//        s = s.replace("dz=", "#");
+//        s = s.replace("c=", "#")
+//                .replace("c-", "#")
+//                .replace("d-", "#")
+//                .replace("lj", "#")
+//                .replace("nj", "#")
+//                .replace("s=", "#")
+//                .replace("z=", "#");
+//
+//        System.out.println(s.length());
+
         String s = in.readLine();
         int count = 0;
         for (int i = 0; i < s.length(); i++) {
