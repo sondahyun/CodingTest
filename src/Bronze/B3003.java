@@ -8,20 +8,12 @@ public class B3003 {
     public static void main(String[] args) throws Exception {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 
-        String[] split = in.readLine().split("");
+        String[] split = in.readLine().split(" ");
+        int[] array = {1, 1, 2, 2, 2, 8};
 
-//        String[] telphone = new String[8];
-        int count = 0;
-        String[] telphone = {"ABC", "DEF", "GHI", "JKL", "MNO", "PQRS", "TUV", "WXYZ"};
-//        for (int i = 0; i < split.length; i++) {
-        for (String s : split) {
-            for (int j = 0; j < 8; j++) {
-                if (telphone[j].contains(s)) {
-                    count += (3 + j);
-                    break;
-                }
-            }
+        for (int i = 0; i < 6; i++) {
+            System.out.print(array[i] - Integer.parseInt(split[i]) + " ");
         }
-        System.out.println(count);
+
     }
 }
