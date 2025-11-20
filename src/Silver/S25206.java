@@ -9,6 +9,9 @@ public class S25206 {
         for (int i = 0; i < 20; i++) {
             String[] s = in.readLine().split(" ");
 
+
+
+
         }
 
     }
